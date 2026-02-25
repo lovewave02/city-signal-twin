@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Signal Twin</title>
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+    <link rel="stylesheet" href="/web/styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="panel headline">
+        <h1>City Signal Twin</h1>
+        <p>Commuter stress hotspots from transit delay, PM2.5, and discomfort index.</p>
+      </section>
+
+      <section class="panel stats">
+        <h2>Top Hotspots</h2>
+        <ol id="hotspots"></ol>
+      </section>
+
+      <section class="panel map-wrap">
+        <div id="map"></div>
+      </section>
+
+      <section class="panel trend">
+        <h2>12h Average Stress Trend</h2>
+        <div id="trend"></div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+    <script type="module" src="/web/main.js"></script>
+  </body>
+</html>
